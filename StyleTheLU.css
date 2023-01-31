@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+:root {
+  --green: #509856;
+  --black: #15161b;
+  --gray: #bfbfbf;
+  --white: #eeeeee;
+}
+
+body {
+  background: linear-gradient(30deg, rgba(130,129,111,1) 10%, rgba(10,10,10,1) 80%);
+  color: var(--white);
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 2% 4%;
+}
+
+.box{
+  border-radius: 40px;
+  background-color: var(--black);
+  padding-bottom: 1%;
+}
+
+/*HEADER*/
+.header{
+  width: 70%;
+    margin: 2% 15%;
+    padding: 10px;
+    background: #15161b;
+    border-radius: 25px;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.header .p{
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.iconHeader{
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+
+/*BANNER*/
+.imgx{
+  width: 100%;
+  position: relative;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.imgSombra{
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 90%);
+  mask-image: linear-gradient(to top, transparent 1%, black 90%);
+}
+
+.p{
+    color: var(--gray);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.infos{
+  margin-top: -35%;
+}
+
+/*BANNER*/
+#coluna1 {
+  padding: 0% 2% 0% 5% ;
+}
+#capa {
+  width: 90%;
+  border-radius: 3%;
+  margin-bottom: 10%;
+}
+
+.boxLineGraficos{
+  width: 80%;
+  margin: 0% 10% ;
+}
+
+.boxGrafico{
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 2%;
+  font-weight: bold;
+}
+
+.grafico{
+  width: 75%;
+  margin-top: 10%;
+}
+
+/*SOBRE*/
+.coluna2{
+  margin-top: 10%;
+  padding: 0% 1%;
+}
+
+.title {
+ font-size: 4rem;
+ font-weight: 600;
+}
+
+.buttonAssistir {
+  background-color: #4D7141;
+  border: none;
+  color: var(--white);
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.buttonIcon {
+  width: 46px;
+  height: 44px;
+  border: 2px solid var(--white);
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.col .p{
+  font-size: 1.2rem;
+}
+
+.txtDesc{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+tr{
+    color: var(--gray);
+    border-bottom: 1px solid #509856;
+}
+
+
+/*ELENCO*/
+.coluna3{
+  margin-top: 18%;
+  padding: 0%;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.fotoElenco {
+  width: 86px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.card-body{
+  padding: 20px 5px 10px 10px;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.card-text{
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.vermais{
+  color: var(--green);
+  font-family: Arial, sans-serif;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.iconSeta{
+  width: 10px;
+  height: 10px;
+  margin-bottom: 4px;
+}
+
+.circle{
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--green);
+  background-color: var(--black);
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*resposnove*/
+@media only screen and (min-width: 360px) {
+  body{
+    padding: 5% 2%;
+  }
+  .box{
+    width: 100%;
+  }
+  .header{
+    display: none;
+  }
+
+ #coluna1{
+  padding: 0% 10%;
+  margin-top: 20%;
+ }
+
+ #capa{
+  margin: 2% 5%;
+ }
+
+ .boxGrafico .p{
+  font-size: 1rem;
+ }
+
+ .coluna2{
+  margin: 0% 0%;
+  padding: 0% 10%;
+ }
+
+ .title{
+  font-size: 3rem;
+ }
+
+ .coluna2 .row .col .p{
+  font-size: 1rem;
+  margin-top: 10%;
+  padding: 0%;
+ }
+
+ .coluna2 .row .col{
+  padding-right: 0%;
+ }
+
+ .buttonAssistir{
+  padding: 12px 16px;
+  font-size: 18px;
+ }
+ .buttonIcon{
+  margin-left:4%;
+ }
+
+
+ .coluna3{
+  margin: 10% 0%;
+  padding: 0% 10%;
+ }
+}
+
+@media only screen and (min-width: 1020px) {
+  body {
+    margin: 1% 4%;
+  }
+
+  /*HEADER*/
+  .header{
+    display: inline-flex;
+    margin-left: 10%;
+  }
+  
+  
+  .infos{
+    margin-top: -35%;
+  }
+  
+  /*BANNER*/
+  #coluna1 {
+    margin-top: 5%;
+    padding: 0% 2% 0% 5% ;
+  }
+  #capa {
+    width: 90%;
+    border-radius: 3%;
+    margin-bottom: 10%;
+  }
+  
+  .coluna2{
+    margin-top: 10%;
+    padding: 0% 1%;
+  }
+  
+  .title {
+   font-size: 3rem;
+   font-weight: 600;
+  }
+
+  
+  /*ELENCO*/
+  .coluna3{
+    margin-top: 24%;
+    padding: 0%;
+  }
+
+}
